@@ -15,7 +15,7 @@ Makefile é um arquivo de texto que possui as instruções para automatizar o pr
 O make verifica primeiramente as dependências de cada arquivo fonte, mas se precisar, ela recompila os arquivos que foram modificados.
 
 #### (c) Qual é a sintaxe utilizada para criar um novo **target**?
-targets: prerequisites                                                                                                        recipe
+targets: prerequisites                                                                                                         recipe                                                                                    
 
 #### (d) Como são definidas as dependências de um **target**, para que elas são utilizadas?
 As dependências são definidas após o nome TARGET. Elas são utilizadas para representar arquivos ou outros targets que o atual depende para ser feito; Então o make usa essas dependências para definir a ordem de compilação do programa.
@@ -25,6 +25,7 @@ As regras do make-file são instruções de como o programa deve ser compilado. 
 ## 4. Sobre a arquitetura **ARM Cortex-M** responda:
 
 ### (a) Explique o conjunto de instruções ***Thumb*** e suas principais vantagens na arquitetura ARM. Como o conjunto de instruções ***Thumb*** opera em conjunto com o conjunto de instruções ARM?
+É a versão compactada do conjunto de instruções ARM original. Sua principal vantagem é utilizar apenas 16 bits para economizar espaço, melhorando a eficiência da memoria. O thumb opera em conjunto com o ARM original, aproveitando as vantagens de ambos conjuntos de instruções.
 
 ### (b) Explique as diferenças entre as arquiteturas ***ARM Load/Store*** e ***Register/Register***.
 
