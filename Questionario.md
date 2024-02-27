@@ -34,6 +34,7 @@ A arquitetura ARM Load/Store acessa a memoria das operações de processamento p
 Existe o Privileged Mode, o qual deixa o software com acesso total as instruções do processador, tendo total controle do sistema quando executado nesse modo. O outro acesso é o Unprivileged Mode, o qual restringe o software a algumas instruções, e devido a isso, não pode executar certos comandos do sistema. O modo de operação Thread Mode é utilizado em execuções normais de tasks do usuário ou sistema, onde exceções e interrupções são tratados de acordo com a prioridade. O modo Handler Mode é ativado quando uma interrupção ocorre dando prioridade ao tratamento desses enventos comparados com a execução normal.  
 
 ### (d) Explique como os processadores ARM tratam as exceções e as interrupções. Quais são os diferentes tipos de exceção e como elas são priorizadas? Descreva a estratégia de **group priority** e **sub-priority** presente nesse processo.
+As interrupções são tratadas pelo sistema de prioridade em níveis de exceção e grupos de prioridade. Existem diversos tipos, como reset, IRQ, FIQ, SVC, onde cada um tem sua prioridade. Serão criados grupos com as interrupções em níveis de prioridade, e dentro desses grupos, prioridades adicionais são criadas. O grupo é denomindado de Group Priority e as propriedades adicionais são as Sub-Priority.
 
 ### (e) Qual a diferença entre os registradores **CPSR** (***Current Program Status Register***) e **SPSR** (***Saved Program Status Register***)?
 
