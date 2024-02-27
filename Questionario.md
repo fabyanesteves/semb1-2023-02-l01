@@ -55,6 +55,7 @@ O NVIC tem a finalidade de gerenciar as interrupções de forma que uma hierarqu
 O mecanismo preenche o Cortex-M com o valor EXC_RETURN, e isso serve para indentificar o contexto da interrupção e realizar o melhor retorno de interrupção, logo o EXC_RETURN tem as informações do estado que o processador estava antes da interrupção. 
 
 ### (k) Qual  a  diferença  no  salvamento  de  contexto,  durante  a  chegada  de  uma  interrupção,  entre  os processadores Cortex-M3 e Cortex M4F (com ponto flutuante)? Descreva em termos de tempo e também de uso da pilha. Explique também o que é ***lazy stack*** e como ele é configurado. 
+A diferença ocorre ao suporte de ponto flutuante no Cortex-M4 e o impacto no tempo de resposta e no uso da pilha. No Cortex-M3 ocorre uma interrupção, onde o contexto é salvo automaticamente na pilha principal. No M4F ocorre um suporte de ponto flutuante, logo é possivel utilizar a pilha de contexto separadamente para os registradores, durante uma interrupção salva. O Lazy Stack se consiste em uma tecnica de economia de tempo e espaço na pilha para o tratamento de interrupções; Logo, usar o Lazy Stack é possivel adiar o salvamento dos registradores de pontos flutuantes até que eles sejam usados em uma interrupção; Sendo configurado por meio do LSPACT ele pode ser utilizado para ativar ou desativar o Lazy Stack. 
 
 
 ## Referências
