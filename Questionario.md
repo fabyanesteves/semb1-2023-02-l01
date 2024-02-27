@@ -1,9 +1,10 @@
 # Questionário Sistemas Embarcados I
 
 ## 1. Explique brevemente o que é compilação cruzada (***cross-compiling***) e para que ela serve.
-A compilação cruzada é quando um programa é compilado em alguma plataforma ou sistema operacional diferente da qual ele seria executado; Ela serve para desenvolver softwares para diferentes plataformas com recursos diferentes da qual a plataforma o desenvolvedor está utilizando
+A compilação cruzada é quando um programa é compilado em alguma plataforma ou sistema operacional diferente da qual ele seria executado; Ela serve para desenvolver softwares para diferentes plataformas com recursos diferentes da qual a plataforma o desenvolvedor está utilizando.
 
 ## 2. O que é um código de inicialização ou ***startup*** e qual sua finalidade?
+O código de inicialização são instruções que serão executadas quando o sistema inicia ou o programa é executado. Com a finalidade de preparar o ambiente o qual o programa principal será executado. 
 
 ## 3. Sobre o utilitário **make** e o arquivo **Makefile responda**:
 
