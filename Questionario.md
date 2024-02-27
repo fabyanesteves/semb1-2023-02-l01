@@ -28,6 +28,7 @@ As regras do make-file são instruções de como o programa deve ser compilado. 
 É a versão compactada do conjunto de instruções ARM original. Sua principal vantagem é utilizar apenas 16 bits para economizar espaço, melhorando a eficiência da memoria. O thumb opera em conjunto com o ARM original, aproveitando as vantagens de ambos conjuntos de instruções.
 
 ### (b) Explique as diferenças entre as arquiteturas ***ARM Load/Store*** e ***Register/Register***.
+A arquitetura ARM Load/Store acessa a memoria das operações de processamento pois ela as separa explicitamente; Utilizando do Load e Store para acessar a memoria. A arquitetura Register/Register as operações para acesso de memoria são em conjunto das operações de processamento; A qual utiliza registradores de dados para acesso direto da memoria.
 
 ### (c) Os processadores **ARM Cortex-M** oferecem diversos recursos que podem ser explorados por sistemas baseados em **RTOS** (***Real Time Operating Systems***). Por exemplo, a separação da execução do código em níveis de acesso e diferentes modos de operação. Explique detalhadamente como funciona os níveis de acesso de execução de código e os modos de operação nos processadores **ARM Cortex-M**.
 
