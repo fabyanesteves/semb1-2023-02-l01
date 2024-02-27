@@ -15,14 +15,13 @@ Makefile é um arquivo de texto que possui as instruções para automatizar o pr
 O make verifica primeiramente as dependências de cada arquivo fonte, mas se precisar, ela recompila os arquivos que foram modificados.
 
 #### (c) Qual é a sintaxe utilizada para criar um novo **target**?
-targets: prerequisites                                                                                             
-           recipe
+targets: prerequisites                                                                                                        recipe
 
 #### (d) Como são definidas as dependências de um **target**, para que elas são utilizadas?
 As dependências são definidas após o nome TARGET. Elas são utilizadas para representar arquivos ou outros targets que o atual depende para ser feito; Então o make usa essas dependências para definir a ordem de compilação do programa.
 
 #### (e) O que são as regras do **Makefile**, qual a diferença entre regras implícitas e explícitas?
-
+As regras do make-file são instruções de como o programa deve ser compilado. Regras implícitas são criadas pelo próprio MAKE. Regras explícitas são criadas pelo desenvolvedor.
 ## 4. Sobre a arquitetura **ARM Cortex-M** responda:
 
 ### (a) Explique o conjunto de instruções ***Thumb*** e suas principais vantagens na arquitetura ARM. Como o conjunto de instruções ***Thumb*** opera em conjunto com o conjunto de instruções ARM?
