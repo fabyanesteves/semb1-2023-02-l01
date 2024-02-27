@@ -43,6 +43,7 @@ O SPSR é temporário e salva o estado do processador antes de ser alterado por 
 O Link Register armazena o endereço de retorno de uma função, a qual permite que o programa volte a instrução de chamada quando concluir a sub-rotina ou função. 
 
 ### (g) Qual o propósito do Program Status Register (PSR) nos processadores ARM?
+O PSR armazena informações sobre o estado atual do processador e as informações importantes para o controle e o gerenciamento do mesmo. 
 
 ### (h) O que é a tabela de vetores de interrupção?
 
