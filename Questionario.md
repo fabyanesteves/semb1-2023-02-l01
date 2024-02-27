@@ -15,6 +15,8 @@ Makefile é um arquivo de texto que possui as instruções para automatizar o pr
 O make verifica primeiramente as dependências de cada arquivo fonte, mas se precisar, ela recompila os arquivos que foram modificados.
 
 #### (c) Qual é a sintaxe utilizada para criar um novo **target**?
+targets: prerequisites
+           recipe
 
 #### (d) Como são definidas as dependências de um **target**, para que elas são utilizadas?
 
