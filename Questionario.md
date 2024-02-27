@@ -12,6 +12,7 @@ O código de inicialização são instruções que serão executadas quando o si
 Makefile é um arquivo de texto que possui as instruções para automatizar o processo de compilação, é ele que decide as "regras" para que o programa seja compilado. 
 
 #### (b) Descreva brevemente o processo realizado pelo utilitário **make** para compilar um programa.
+O make verifica primeiramente as dependências de cada arquivo fonte, mas se precisar, ela recompila os arquivos que foram modificados.
 
 #### (c) Qual é a sintaxe utilizada para criar um novo **target**?
 
