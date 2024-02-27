@@ -40,6 +40,7 @@ As interrupções são tratadas pelo sistema de prioridade em níveis de exceç�
 O SPSR é temporário e salva o estado do processador antes de ser alterado por uma execução ou interrupção. Já o CPSR salva o estado atual do processador durante o processo de execução do programa.
 
 ### (f) Qual a finalidade do **LR** (***Link Register***)?
+O Link Register armazena o endereço de retorno de uma função, a qual permite que o programa volte a instrução de chamada quando concluir a sub-rotina ou função. 
 
 ### (g) Qual o propósito do Program Status Register (PSR) nos processadores ARM?
 
