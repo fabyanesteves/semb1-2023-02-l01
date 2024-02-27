@@ -37,6 +37,7 @@ Existe o Privileged Mode, o qual deixa o software com acesso total as instruçõ
 As interrupções são tratadas pelo sistema de prioridade em níveis de exceção e grupos de prioridade. Existem diversos tipos, como reset, IRQ, FIQ, SVC, onde cada um tem sua prioridade. Serão criados grupos com as interrupções em níveis de prioridade, e dentro desses grupos, prioridades adicionais são criadas. O grupo é denomindado de Group Priority e as propriedades adicionais são as Sub-Priority.
 
 ### (e) Qual a diferença entre os registradores **CPSR** (***Current Program Status Register***) e **SPSR** (***Saved Program Status Register***)?
+O SPSR é temporário e salva o estado do processador antes de ser alterado por uma execução ou interrupção. Já o CPSR salva o estado atual do processador durante o processo de execução do programa.
 
 ### (f) Qual a finalidade do **LR** (***Link Register***)?
 
