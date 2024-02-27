@@ -9,6 +9,7 @@ O código de inicialização são instruções que serão executadas quando o si
 ## 3. Sobre o utilitário **make** e o arquivo **Makefile responda**:
 
 #### (a) Explique com suas palavras o que é e para que serve o **Makefile**.
+Makefile é um arquivo de texto que possui as instruções para automatizar o processo de compilação, é ele que decide as "regras" para que o programa seja compilado. 
 
 #### (b) Descreva brevemente o processo realizado pelo utilitário **make** para compilar um programa.
 
