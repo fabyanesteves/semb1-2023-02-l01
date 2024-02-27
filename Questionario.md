@@ -17,7 +17,8 @@ O make verifica primeiramente as dependências de cada arquivo fonte, mas se pre
 #### (c) Qual é a sintaxe utilizada para criar um novo **target**?
 targets: prerequisites
 	recipe
- 
+ targets: prerequisites
+	recipe
 #### (d) Como são definidas as dependências de um **target**, para que elas são utilizadas?
 As dependências são definidas após o nome TARGET. Elas são utilizadas para representar arquivos ou outros targets que o atual depende para ser feito; Então o make usa essas dependências para definir a ordem de compilação do programa.
 
