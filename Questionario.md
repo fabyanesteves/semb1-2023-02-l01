@@ -15,10 +15,11 @@ Makefile é um arquivo de texto que possui as instruções para automatizar o pr
 O make verifica primeiramente as dependências de cada arquivo fonte, mas se precisar, ela recompila os arquivos que foram modificados.
 
 #### (c) Qual é a sintaxe utilizada para criar um novo **target**?
-targets: prerequisites
+targets: prerequisites                                                                                             
            recipe
 
 #### (d) Como são definidas as dependências de um **target**, para que elas são utilizadas?
+As dependências são definidas após o nome TARGET. Elas são utilizadas para representar arquivos ou outros targets que o atual depende para ser feito; Então o make usa essas dependências para definir a ordem de compilação do programa.
 
 #### (e) O que são as regras do **Makefile**, qual a diferença entre regras implícitas e explícitas?
 
