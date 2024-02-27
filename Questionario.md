@@ -49,6 +49,7 @@ O PSR armazena informações sobre o estado atual do processador e as informaç�
 A tabela de vetores é responsável por mapear os endereços de entrada de todas as interrupções suportadas pelo processador. 
 
 ### (i) Qual a finalidade do NVIC (**Nested Vectored Interrupt Controller**) nos microcontroladores ARM e como ele pode ser utilizado em aplicações de tempo real?
+O NVIC tem a finalidade de gerenciar as interrupções de forma que uma hierarquia seja seguida, conforme a prioridade e eficiência. Ele pode ser utilizado para que as interrupções sejam priorizadas conforme a importância. E para isso ser eficiente, ele suporta uma interrupção enquanto a outra está sendo feita, permitindo que algumas interrupções sejam temporariamente desativadas ou mascaradas se nescessário. 
 
 ### (j) Em modo de execução normal, o Cortex-M pode fazer uma chamada de função usando a instrução **BL**, que muda o **PC** para o endereço de destino e salva o ponto de execução atual no registador **LR**. Ao final da função, é possível recuperar esse contexto usando uma instrução **BX LR**, por exemplo, que atualiza o **PC** para o ponto anterior. No entanto, quando acontece uma interrupção, o **LR** é preenchido com um valor completamente  diferente,  chamado  de  **EXC_RETURN**.  Explique  o  funcionamento  desse  mecanismo  e especifique como o **Cortex-M** consegue fazer o retorno da interrupção. 
 
