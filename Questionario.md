@@ -46,6 +46,7 @@ O Link Register armazena o endereço de retorno de uma função, a qual permite 
 O PSR armazena informações sobre o estado atual do processador e as informações importantes para o controle e o gerenciamento do mesmo. 
 
 ### (h) O que é a tabela de vetores de interrupção?
+A tabela de vetores é responsável por mapear os endereços de entrada de todas as interrupções suportadas pelo processador. 
 
 ### (i) Qual a finalidade do NVIC (**Nested Vectored Interrupt Controller**) nos microcontroladores ARM e como ele pode ser utilizado em aplicações de tempo real?
 
